@@ -1,0 +1,33 @@
+{% extends 'base/base1.html' %}
+{% block content %}
+        <div class="nav-container"> </div>
+        <div class="main-container">
+            <section class="imageblock switchable feature-large space--xxs bg--secondary">
+                <div class="imageblock__content col-lg-5 col-md-4 pos-right">
+                    <div class="background-image-holder"> <img alt="image" src="static/img/inner-7.jpg"> </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-7">
+                            <h2>Create an account</h2> <span>Already have an account? <a href="#">Sign In</a></span>
+                            <hr class="short">
+                            <form action="{{ url_for('register') }}" method="post">
+                                <div class="row">
+                                    <div class="col-12"> <input type="text" name="first_name" placeholder="First Name"> </div>
+                                    <div class="col-12"> <input type="text" name="last_name" placeholder="Last Name"> </div>
+                                    <div class="col-12"> <input type="text" name="gender" placeholder="Gender"> </div>
+                                    <div class="col-12"> <input type="email" name="email" placeholder="Email Address"> </div>
+                                    <div class="col-12"> <input type="password" name="password" placeholder="Password"> </div>
+                                    <div class="col-12">
+                                        <div class="input-checkbox"> <input type="checkbox" name="agree"> <label></label> </div> <span>Remember Me</span> </div>
+                                    <div class="col-12"> <button type="submit" class="btn btn--primary">Create Account</button> </div>
+                                    <hr>
+                                    <div class="col-12"> <span class="type--fine-print">By signing up, you agree to the <a href="#">Terms of Service</a></span> </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+{% endblock %}

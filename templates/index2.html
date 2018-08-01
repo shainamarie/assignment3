@@ -1,0 +1,128 @@
+{% extends 'base/base2.html' %}
+{% block content %}
+<div class="main">
+        <div class="nav-container"> </div>
+        <div class="main-container">
+            <section class="space--xxs bg--dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="slider" data-paging="true">
+                                <ul class="slides">
+                                    <li class="col-md-6 col-12">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <a href="#">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder"> <img alt="background" src="static/img/len-about.jpg"> </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Lucy Heartfilia</h4> <span>Lena</span> </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-6 col-12">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <a href="#">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder"> <img alt="background" src="static/img/len2-about.jpg"> </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Lucy Heartfilia</h4> <span>Lena</span> </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-6 col-12">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <a href="#">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder"> <img alt="background" src="static/img/darlene3-about.jpg"> </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Rem</h4> <span>ChiHime</span> </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-6 col-12">
+                                        <div class="project-thumb hover-element border--round hover--active">
+                                            <a href="#">
+                                                <div class="hover-element__initial">
+                                                    <div class="background-image-holder"> <img alt="background" src="static/img/darlene4-about.jpg"> </div>
+                                                </div>
+                                                <div class="hover-element__reveal" data-scrim-top="5">
+                                                    <div class="project-thumb__title">
+                                                        <h4>Rem</h4> <span>ChiHime</span> </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feature-large feature-large-2">
+                <div class="message">
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            <ul>
+                                {% for message in messages %}
+                                <li>{{ message }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-4 col-lg-3">
+                            <h3>Express yourself</h3>
+                            <p class="lead">PCG is built to connect cosplayers all around Pagadian, making it more easier for cosplayers to communicate,bond, make plans, and make projects with other cosplayers.</p>
+                        </div>
+                        <div class="col-md-4 col-lg-4"> <img alt="Image" class="border--round box-shadow-wide" src="static/img/official-logo.png"> </div>
+                        <div class="col-md-4 col-lg-2">
+                            <hr class="short">
+                            <p>It is easier to connect to others with the help of PCG and collaborate with other cosplayers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center bg--dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature feature-8"> <img alt="Image" src="static/img/darlene-member.jpg">
+                                <h5>Darlene Feb M. Nuenay</h5> <span>Founder &amp; CEO</span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-8"> <img alt="Image" src="static/img/shaina3-member.jpg">
+                                <h5>Shaina Marie A. Samonte</h5> <span>Co-Founder &amp; CTO</span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-8"> <img alt="Image" src="static/img/hayashi-member.jpg">
+                                <h5>Hayashi Forest</h5> <span>Chief of Operations</span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-8"> <img alt="Image" src="static/img/shaina-member.jpg">
+                                <h5>Cameron Nguyen</h5> <span>Lead Designer</span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-8"> <img alt="Image" src="static/img/avatar-round-5.png">
+                                <h5>Josie Web</h5> <span>Head of Development</span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-8"> <img alt="Image" src="static/img/avatar-round-6.png">
+                                <h5>Bryce Vaughn</h5> <span>Marketing Director</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+</div>
+{% endblock %}

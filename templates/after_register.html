@@ -1,0 +1,22 @@
+{% extends 'base/base2.html' %}
+{% block content %}
+        <div class="nav-container"> </div>
+        <div class="main-container">
+            <section class="cover height-80 imagebg text-center" data-overlay="5">
+                <div class="background-image-holder background--top"> <img alt="background" src="static/img/landing-1.jpg"> </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-md-8"> <img alt="Image" class="unmarg--bottom" src="static/img/headline-1.png">
+                            <h3>Make a list of your cosplays and future cosplay plans</h3>
+                            <br>
+                            <br>
+                            <a class="btn btn--primary type--uppercase" href="{{ url_for('create_list') }}"> <span class="btn__text">
+						Create A list</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+{% endblock %}
+
+
